@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app-new
+  labels:
+    app: python-app-new
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-app-new
+  template:
+    metadata:
+      labels:
+        app: python-app-new
+    spec:
+      containers:
+      - name: python-app-new
+        image: slashme101/python-app-new:v2
+        ports:
+        - containerPort: 5000
