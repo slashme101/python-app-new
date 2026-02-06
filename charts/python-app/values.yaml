@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: slashme101/python-app-new
   pullPolicy: IfNotPresent
-  tag: 332ef4
+  tag: '428373'
 imagePullSecrets: []
 nameOverride: ""
 fullnameOverride: ""
